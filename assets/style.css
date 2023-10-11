@@ -1,0 +1,365 @@
+/* * ROOT AND GLOBAL *//* #region */
+:root {
+    --primary: #EA6138; /*shirt sun orange */
+    --secondary: #261E20; /*shirt text*/
+    --tertiary: #EFBD51; /*shirt sun yellow */
+    --text: #FFF7EF; /*shirt background */
+    --temp: black;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--text)
+}
+
+body {
+    background-color: var(--secondary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+}
+/* #endregion */
+
+/* * HEADER *//* #region */
+ header {
+    background-color: var(--primary);
+    height: 150px;
+    position: relative;
+}
+
+header h1 {
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    background: var(--tertiary);
+    padding: 20px;
+    padding-left: 10%;
+    text-align: center;
+    font-size: 400%;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding-top: 15px;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+.navbar a {
+    padding: 0 20px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--text);
+}
+/* #endregion */
+
+/* * BANNER *//* #region */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: var(--primary);
+    background-image: url(./images/Banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile-picture {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    border: 2px solid var(--text);
+    margin: 10px;
+}
+
+.banner h2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--tertiary);
+    padding: 5px;
+    margin: 20px 40px;
+    font-size: 48px;
+}
+/* #endregion */
+
+/* * CONTAINER *//* #region */
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    padding-right: 4%;
+    text-align: justify;
+}
+
+.segment {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 5px;
+}
+
+.title {
+    display: block;
+    flex: 20%;
+    padding-right: 1%;
+    margin: 2%;
+    border-right: 5px solid var(--tertiary);
+}
+
+.title h3 {
+    padding: 2%;
+    text-align: right;
+    font-size: 300%;
+    color: var(--tertiary);
+}
+
+.content {
+    display: flex;
+    flex: 80%;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+}
+/* #endregion */
+
+/* * ABOUT ME *//* #region */
+#about-me-content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#about-me-content p {
+    display: flex;
+    margin: 10px;
+    font-size: 150%;
+}
+
+/* #endregion */
+
+/* * COMPLETED PROJECTS *//* #region */
+#completed-projects-content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.project-links {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    justify-content: center;
+}
+
+.project-links a {
+    border: 5px solid var(--tertiary);
+    transition: border 0.8s ease;
+    /* margin: 20px; */
+}
+
+.project-links img {
+    filter: blur(2px) grayscale(80%);
+    transition: filter 0.8s ease;
+    padding: 4px 4px 0px 4px;
+}
+
+.project-links h4 {
+    position: absolute;
+    bottom: 15%;
+    background-color: var(--tertiary);
+    font-size: 200%;
+    text-align: center;
+    transition: background-color 0.8s ease;
+    padding: 1%;
+}
+
+.project-links a:hover {
+    border: 5px solid var(--primary);
+}
+
+.project-links a:hover img {
+    filter: blur(0px) grayscale(0%);
+}
+
+.project-links a:hover h4 {
+    background-color: var(--primary);
+} 
+
+.smaller-link {
+    position: relative;
+}
+
+#featured {
+    flex: 100%;
+}
+
+#featured a {
+    width: 100%;
+    margin: 1% 0;
+}
+
+#featured img {
+    width: 100%;
+}
+
+#smaller {
+    flex: 100%;
+    justify-content: space-between;
+}
+
+#smaller a {
+    width: 49%;
+    margin: 1% 0;
+}
+
+#smaller img {
+    width: 100%;
+}
+/* #endregion */
+
+/* * CONACT ME *//* #region */
+#contact-me-content {
+    display: flex;
+    bottom: 5px;
+    right: 10px;
+    padding-top: 15px;
+    font-size: 40px;
+    height: 200px;
+    justify-content: center;
+}
+
+#contact-me-content nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#contact-me-content a {
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 5px solid var(--tertiary);
+    color: var(--text);
+    padding: 10px;
+}
+/* #endregion */
+
+/* * FOOTER  */ /* #region */
+footer {
+    margin-top: 2%;
+    height: 18px;
+    background-color: var(--tertiary);
+}
+
+footer p {
+    filter: brightness(0.6);
+    text-align: center;
+    color: var(--tertiary);
+}
+/* #endregion */
+
+/* * RESIZING 860px *//* #region */
+@media (max-width: 860px) {
+    /* * HEADER */
+    header {
+        background-color: var(--tertiary);
+        height: 18px;
+        position: relative;
+    }
+
+    header h1 {
+        z-index: 1;
+        right: 0;
+        bottom: -290px;
+        background: var(--tertiary);
+        padding: 20px;
+        font-size: 250%;
+    }
+
+    .navbar {
+        display: none
+    }
+
+    /* * BANNER */
+    .banner {
+        height: 300px;
+    }
+
+    .profile-picture {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .banner h2 {
+        display: none;
+    }
+
+    /* * CONTAINER */
+    .segment {
+        flex-flow: column nowrap;
+    }
+
+    .title {
+        display: inline-flex;
+        padding-left: 2%;
+        border-right: 0;
+        border-bottom: 5px solid var(--tertiary);
+    }
+
+    .title h3 {
+        padding: 2% 1%;
+    }
+
+    .project-links img {
+        filter: blur(0px) grayscale(0%);
+    }
+    
+    #contact-me-content {
+        font-size: 24px;
+    }
+
+    #contact-me-content a {
+        border-bottom: 0;
+    }
+}
+/* #endregion */
+
+/* * RESIZING 640px *//* #region */
+@media (max-width: 640px) {
+    /* * HEADER */
+    header h1 {
+        bottom: -190px;
+        font-size: 200%;
+    }
+
+    /* * BANNER */
+    .banner {
+        height: 200px;
+    }
+
+    .profile-picture {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .banner h2 {
+        display: none;
+    }
+
+    /* * CONTAINER */    
+    #smaller a {
+        width: 100%;
+    }
+
+    #contact-me-content {
+        font-size: 20px;
+    }
+}
+/* #endregion */
+
+/* * RESIZING 400px *//* #region */
+/* @media (max-width: 400px) {
+
+} */
+/* #endregion */
