@@ -2,7 +2,7 @@
 
 ## Finished Product
 
-### [🔗Project Link](https://tylerfruik.github.io/Portfolio/)
+### [🔗Project Link](https://tylerfruik.github.io/portfolio-redeploy/)
 This project involved creating a website completely from scratch. It principally focused on the intricacies of flex-boxes, semantic flow, link incorporation, and spacial consistency with resizes.
 The resulting website from this week's project will serve as a professional portfolio comprised of all of this course's projects.
 As each week will likely cover new material to be added, the content of the webpage will be ever-evolving.  Now that the entirety of the functionality is incorporated within the page, each week's addition will simply be a minute entry to the code.
