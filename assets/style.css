@@ -358,8 +358,61 @@ footer p {
 }
 /* #endregion */
 
-/* * RESIZING 400px *//* #region */
-/* @media (max-width: 400px) {
+/* * RESIZING 390px *//* #region */
+@media (max-width: 390px) {
+    /* * HEADER */
+    header h1 {
+        bottom: -160px;
+        font-size: 175%;
+        padding: 10px;
+    }
 
-} */
+    /* * BANNER */
+    .banner {
+        height: 170px;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* * CONTAINER */
+    .segment {
+        flex-flow: column nowrap;
+        width: 390px;
+    }
+
+    .title {
+        display: inline-flex;
+        border-right: 0;
+        border-bottom: 5px solid var(--tertiary);
+    }
+
+    .title h3 {
+        font-size: 200%;
+    }
+
+    #about-me-content p {
+        font-size: 100%;
+    }
+
+    .content {
+        flex: 100%;
+        width: 350px;
+        align-self: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #contact-me-content nav {
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+
+    #contact-me-content a {
+        padding: 0px;
+        font-size: 14px;
+    }
+}
 /* #endregion */
